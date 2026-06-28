@@ -1,4 +1,4 @@
-const MODEL = "gemini-1.5-flash"; // 오류가 나면 "gemini-1.5-flash-latest" 등으로 변경하세요.
+const MODEL = process.env.GEMINI_MODEL_CHAT || "gemini-2.5-flash-lite"; // 오류가 나면 "gemini-1.5-flash-latest" 등으로 변경하세요.
 const API_BASE = "https://generativelanguage.googleapis.com/v1beta";
 
 function buildSystemInstruction({ philosopher, mode }) {
