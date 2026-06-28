@@ -1,4 +1,4 @@
-const MODEL = "gemini-1.5-flash";
+const MODEL = process.env.GEMINI_MODEL_SUMMARY || "gemini-2.5-flash-lite";
 const API_BASE = "https://generativelanguage.googleapis.com/v1beta";
 
 function toGeminiContents(messages) {
